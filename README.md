@@ -1,5 +1,5 @@
 # Tryhackme_Writeups
-These are Tryhackme Learning Material that I found usefull also as the answer of different exercises
+These are Tryhackme Learning Material that I found usefull. There is also the answers of the exercises
 
 ## Writeups
 
