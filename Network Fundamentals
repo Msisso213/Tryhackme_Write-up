@@ -2,6 +2,23 @@
 
 ## What is Networking
 
-Network means when devices are connected together. Internet is a giant network in which there is many other networks (private and public). The World Wide Web (www) is used as a repository for storing and sharing information. To communicate and maintain order, devices must be both identifying and identifiable on a network.
-1. What is the key term for devices that are connected together? Netwrok
-2. Who invented the World Wide Web? Tim Berners-Lee
+    1. What is the key term for devices that are connected together? Netwrok
+    2. Who invented the World Wide Web? Tim Berners-Lee
+    3. What does the term "IP" stand for? Internet Protocol
+    4. What is each section of an IP address called? Octet
+    5. How many sections (in digits) does an IP address have? 4
+    6. What does the term "MAC" stand for? Media Access Control - mac address is uniqueto each device, but can be spoofed
+    7. Deploy the interactive lab using the "View Site" button and spoof your MAC address to access the site.  What is the flag? THM{YOU_GOT_ON_TRYHACKME}
+    8. What protocol does ping use? ICMP - Internet Control Message Protocol. Ping is used to determine the time for ICMP packets to travel between devices on a network.'
+    9. What is the syntax to ping 10.10.10.10? ping -c 4 10.10.10.10 - The -c is an options that specifies the numbers of packets to send.
+    10. What flag do you get when you ping 8.8.8.8? THM{I_PINGED_THE_SERVER}
+
+## Intro to LAN
+
+    1. What does LAN stand for? Local Area Network
+    2. What is the verb given to the job that Routers perform? Routing
+    3. What device is used to centrally connect multiple devices on the local network and transmit data to the correct location? Switch
+    4. What topology is cost-efficient to set up? Bus Topology
+    5. What topology is expensive to set up and maintain? Star Topology
+    6. Complete the interactive lab attached to this task. What is the flag given at the end? THM{TOPOLOGY_FLAWS}
+    7. What is the technical term for dividing a network up into smaller pieces? Subnetting
