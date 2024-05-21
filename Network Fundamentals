@@ -15,10 +15,75 @@
 
 ## Intro to LAN
 
-    1. What does LAN stand for? Local Area Network
+    1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
     2. What is the verb given to the job that Routers perform? Routing
     3. What device is used to centrally connect multiple devices on the local network and transmit data to the correct location? Switch
     4. What topology is cost-efficient to set up? Bus Topology
     5. What topology is expensive to set up and maintain? Star Topology
     6. Complete the interactive lab attached to this task. What is the flag given at the end? THM{TOPOLOGY_FLAWS}
     7. What is the technical term for dividing a network up into smaller pieces? Subnetting
+    8. How many bits are in a subnet mask? 32
+    9. What is the range of a section (octet) of a subnet mask? 0-255
+    10. What address is used to identify the start of a network? Network Address
+    11. What address is used to identify devices within a network? Host Address
+    12. What is the name used to identify the device responsible for sending data to another network? Default Gateway
+    13. What does ARP stand for? Address Resolution Protocol - Two types of messages, ARP Request and ARP Reply
+    14. What category of ARP Packet asks a device whether or not it has a specific IP address? Request
+    15. What address is used as a physical identifier for a device on a network? MAC Address
+    16. What address is used as a logical identifier for a device on a network? IP Address
+    17. What type of DHCP packet is used by a device to retrieve an IP address? DHCP Discover
+    18. What type of DHCP packet does a device send once it has been offered an IP address by the DHCP server? DHCP Request
+    19. Finally, what is the last DHCP packet that is sent to a device from a DHCP server? DHCP ACK -ack stands for acknowledge
+
+##  OSI Model
+
+    1. What does the "OSI" in "OSI Model" stand for? Open System Interconnection
+    2. How many layers (in digits) does the OSI model have? 7 - Application. Presentation, Session, Transport, Network, Data link, Physical
+    3. What is the key term for when pieces of information get added to data? Encapsulation
+    4. What is the name of this Layer? Application
+    5. What is the technical term that is given to the name of the software that users interact with? Graphical User Interface (GUI)
+    6. What is the name of this Layer? Presentation
+    7. What is the main purpose that this Layer acts as? Translator
+    8. What is the name of this Layer? Session
+    9. What is the technical term for when a connection is successfully established? Session
+    10. What is the technical term for "small chunks of data"? Packets
+    11. What is the name of this Layer? Transport
+    12. What does TCP stand for? Transmission Control Protocol
+    13. What does UDP stand for? User Datagram Protocol
+    14. What protocol guarantees the accuracy of data? TCP
+    15. What protocol doesn't care if data is received or not by the other device? UDP
+    16. What protocol would an application such as an email client use? TCP
+    17. What protocol would an application that downloads files use? TCP
+    18. What protocol would an application that streams video use? UDP
+    19. What is the name of this Layer? Network
+    20. Will packets take the most optimal route across a network? (Y/N) Y
+    21. What does the acronym "OSPF" stand for? OpenShortest Path First
+    22. What does the acronym "RIP" stand for? Routing Information Protocol
+    23. What type of addresses are dealt with at this layer? IP Address
+    24. What is the name of this Layer? Data Link
+    25. What is the name of the piece of hardware that all networked devices come with? Network Interface Card (NIC)
+    26. What is the name of this Layer? Physical
+    27. What is the name of the numbering system that is both 0's and 1's? Binary
+    28. What is the name of the cables that are used to connect devices? Ethernet Cables
+
+## Packets & Frames
+
+    1. What is the name for a piece of data when it does have IP addressing information? Packet
+    2. What is the name for a piece of data when it does not have IP addressing information? Frame
+    3. What is the header in a TCP packet that ensures the integrity of data? Checksum
+    4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
+    5. What does the term "UDP" stand for? User Datagram Protocol
+    6. What type of connection is "UDP"? Stateless
+    7. What protocol would you use to transfer a file? TCP
+    8. What protocol would you use to have a video call? UDP
+
+## Extending Your Network
+
+    1. What is the name of the device that is used to configure port forwarding? Router
+    2. What layers of the OSI model do firewalls operate at? Layer 3 and layer 5
+    3. What category of firewall inspects the entire connection? Stateful
+    4. What category of firewall inspects individual packets? Stateless
+    5. What VPN technology only encrypts & provides the authentication of data? PPP
+    6. What VPN technology uses the IP framework? IPSec
+    7. What is the verb for the action that a router does?
+    8. What are the two different layers of switches? Layer 2, layer 3
