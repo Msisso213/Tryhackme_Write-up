@@ -1,6 +1,12 @@
 # Network Fundamentals
 
 ## What is Networking
+When two or more devices are coected together, they make a network. The Internet is made up of many small networks all joined together. 
+These small networks are called private networks, where networks connecting these small networks are called public networks (Internet).
+To communicate and maintain order, devices must be both identifying and identifiable on a network. That is when IP addresses and MAC addresses come in place.
+An IP address (internet protocol address) can be used as a way of identifying a device on a network for a period of time. There is two type of IP adresses: public (used to identify a device on the internet) and private
+(used to identify a device among other devices). A device that is cconnected to the internet have both public and private IP adresses at the same time.The pubblic IP address is given by your internet service provider (ISP)
+
 
     1. What is the key term for devices that are connected together? Netwrok
     2. Who invented the World Wide Web? Tim Berners-Lee
