@@ -1,11 +1,14 @@
 # Network Fundamentals
 
 ## What is Networking
-When two or more devices are coected together, they make a network. The Internet is made up of many small networks all joined together. 
+-When two or more devices are connected together, they make a network. The Internet is made up of many small networks all joined together. 
 These small networks are called private networks, where networks connecting these small networks are called public networks (Internet).
 To communicate and maintain order, devices must be both identifying and identifiable on a network. That is when IP addresses and MAC addresses come in place.
-An IP address (internet protocol address) can be used as a way of identifying a device on a network for a period of time. There is two type of IP adresses: public (used to identify a device on the internet) and private
-(used to identify a device among other devices). A device that is cconnected to the internet have both public and private IP adresses at the same time.The pubblic IP address is given by your internet service provider (ISP)
+-An IP address (internet protocol address) can be used as a way of identifying a device on a network for a period of time. There is two type of IP adresses: public (used to identify a device on the internet) and private
+(used to identify a device among other devices). A device that is cconnected to the internet have both public and private IP adresses at the same time.The public IP address is given by your internet service provider (ISP)
+There is two types of public IP adresses -> IPv4 (older version) and IPv6 (newer version).
+-A MAC addreess(media access control) which is a unique address given to every device that can bbe found on the microchip board. ***This address can be spoofed.
+-Ping is a network tool which can be used to determine the performance of a connection between devices -> ping IP address or website URL
 
 
     1. What is the key term for devices that are connected together? Netwrok
