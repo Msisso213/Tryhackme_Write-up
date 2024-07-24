@@ -44,6 +44,11 @@ Host Address: this address identifies the device in the subnet. ex: 192.168.1.10
 Default Gateway: its a special address assigned to a device on the network that is capable of sending information to another network. These devices can use any host address but usually use either the first
 or last host address in a network (.1 or .254). ex: 192.168.1.254
 
+-ARP protocol: address resolution protocol is responsible for allowing devices to identify themselves on a network by allowing a device to associate a MAC address with an IP address on the network.
+In order to map these two identifiers together (IP address and MAC address), the ARP protocol sends two types of messages: ARP Request and ARP Reply. The ARP request is a message broadcasted on the network
+to other devices asking, "What is the mac address that owns this IP address?" When the other devices receive that message, they will only respond if they own that IP address and will send an
+ARP reply with its MAC address. The requesting device can now remember this mapping and store it in its ARP cache for future use (its a place in the memory where the mapping is stored).
+
 
     1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
     2. What is the verb given to the job that Routers perform? Routing
