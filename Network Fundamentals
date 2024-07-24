@@ -84,17 +84,32 @@ ARP reply with its MAC address. The requesting device can now remember this mapp
     19. Finally, what is the last DHCP packet that is sent to a device from a DHCP server? DHCP ACK -ack stands for acknowledge
 
 ##  OSI Model
+-OSI model: the open system interconnection model provides a universal framework dictating how all networked devices will send, receive and interpret data even if they don't have the
+same funtion (ex a printer and a computer). It has 7 layers (from 7 to 1) and in everyone of them, pieces of data are added which is called encapsulation
 
     1. What does the "OSI" in "OSI Model" stand for? Open System Interconnection
     2. How many layers (in digits) does the OSI model have? 7 - Application. Presentation, Session, Transport, Network, Data link, Physical
     3. What is the key term for when pieces of information get added to data? Encapsulation
+
+-Layer 7 (application): determine how the user should interac with data sent or received. Usually, applications will provide the user a GUI to interact with the data.
+
     4. What is the name of this Layer? Application
     5. What is the technical term that is given to the name of the software that users interact with? Graphical User Interface (GUI)
+
+-Layer 6 (presentation): standardisation happens in this layer to make sure the data is in the "same language" everywhere so it can be handle the same way everywhere no matter the software. It acts
+as a translator for the data to and from the layer 7. Security features such as encryption (like HTTPS) happens at this layer.
+
     6. What is the name of this Layer? Presentation
     7. What is the main purpose that this Layer acts as? Translator
+
+-Layer 5 (session): this layer will create a connection (synchronise) with the other device that the data is destined for. Then it will begin to divide up the data sent into smaller chunks
+of data and begin to send these chunks (packets) one at a time. This dividing up is beneficial because if the connection is lost, only the chunks that weren't yet sent will have to be sent again.
+
     8. What is the name of this Layer? Session
     9. What is the technical term for when a connection is successfully established? Session
     10. What is the technical term for "small chunks of data"? Packets
+
+-Layer 4 (transport):
     11. What is the name of this Layer? Transport
     12. What does TCP stand for? Transmission Control Protocol
     13. What does UDP stand for? User Datagram Protocol
