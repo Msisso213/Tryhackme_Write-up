@@ -27,7 +27,9 @@ There is two types of public IP adresses -> IPv4 (older version) and IPv6 (newer
 -Star topology: devices are individually connected via a central networking device such as a switch or hub. Any information sent to a device in this topology is sent via the central device to which it connects.
 Pros: highly scalable since all you need to do is connect the new device to the central one.
 Cons: cabling and the purchase of dedicated networking equipment make this topology expensive. If the centralised hardware that connects devices fails, these devices will no longer be able to send or receive data.
--Bus
+-Bus: devices are all connected along the same cable named backbone cable which is similar to the leaf off of a tree.
+Pros: one of the easier and more cost-efficient topologies to set up because of their expenses.
+Cons: prone to become slow, difficult to troubleshoot (its difficult to identify which device is the problem), if there is a problem in the backbone, all devices can't receive/transmit data.
 
     1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
     2. What is the verb given to the job that Routers perform? Routing
