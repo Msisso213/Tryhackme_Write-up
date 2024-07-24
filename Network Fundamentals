@@ -37,6 +37,13 @@ Cons: data travels in a non-efficient way, if a device stops working, the whole 
 -Switches: they are devices that connect multiple devices (computer, printers, tvs, etc.) using ethernet. We usually find them in buisnesses, schools, etc.
 -Routers: they are devices that connect multiple networks and pass data between them.
 
+-Subnetting: its a term that means splitting the network into smaller network (ex: a buisness network has a smaller network only for HR or only for finance). The 3 main subnets are as follows: network address,
+host address and default gateway:
+Network Adress: this address identifies the start of the actual network. ex: a device with the IP address of 192.168.1.100 will be on the network identified by 192.168.1.0
+Host Address: this address identifies the device in the subnet. ex: 192.168.1.100
+Default Gateway: its a special address assigned to a device on the network that is capable of sending information to another network. These devices can use any host address but usually use either the first
+or last host address in a network (.1 or .254). ex: 192.168.1.254
+
 
     1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
     2. What is the verb given to the job that Routers perform? Routing
