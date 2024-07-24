@@ -127,14 +127,21 @@ Cons: doesn't care if data is received, unstable connection results in bad exper
     17. What protocol would an application that downloads files use? TCP
     18. What protocol would an application that streams video use? UDP
 
--Layer 3
+-Layer 3 (network): the most optimal (shortest and reliable) path the data will be sent in will be determined (routing) using both IP addresses of network.
+
     19. What is the name of this Layer? Network
     20. Will packets take the most optimal route across a network? (Y/N) Y
     21. What does the acronym "OSPF" stand for? OpenShortest Path First
     22. What does the acronym "RIP" stand for? Routing Information Protocol
     23. What type of addresses are dealt with at this layer? IP Address
+
+-Layer 2 (data link): this layer adds the MAC address of the receiving endpoint to the network layer. It also present the data in a format suitable for transmission.
+
     24. What is the name of this Layer? Data Link
     25. What is the name of the piece of hardware that all networked devices come with? Network Interface Card (NIC)
+
+-Layer 1 (physical): referes to the physical components of hardware used in networking. Devices use electrical signals to transfer data between each other in a binary numbering system.
+
     26. What is the name of this Layer? Physical
     27. What is the name of the numbering system that is both 0's and 1's? Binary
     28. What is the name of the cables that are used to connect devices? Ethernet Cables
