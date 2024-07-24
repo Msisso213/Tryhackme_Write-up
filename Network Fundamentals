@@ -1,23 +1,28 @@
 # Network Fundamentals
 
 ## What is Networking
--When two or more devices are connected together, they make a network. The Internet is made up of many small networks all joined together. 
-These small networks are called private networks, where networks connecting these small networks are called public networks (Internet).
-To communicate and maintain order, devices must be both identifying and identifiable on a network. That is when IP addresses and MAC addresses come in place.
--An IP address (internet protocol address) can be used as a way of identifying a device on a network for a period of time. There is two type of IP adresses: public (used to identify a device on the internet) and private
-(used to identify a device among other devices). A device that is cconnected to the internet have both public and private IP adresses at the same time.The public IP address is given by your internet service provider (ISP)
-There is two types of public IP adresses -> IPv4 (older version) and IPv6 (newer version).
--A MAC addreess(media access control) which is a unique address given to every device that can bbe found on the microchip board. ***This address can be spoofed.
--Ping is a network tool which can be used to determine the performance of a connection between devices -> ping IP address or website URL
-
+-When two or more devices are connected together, they make a network.
 
     1. What is the key term for devices that are connected together? Netwrok
+
+-The Internet is made up of many small networks all joined together. These small networks are called private networks, where networks connecting these small networks are called public networks (Internet).
+
     2. Who invented the World Wide Web? Tim Berners-Lee
+
+-To communicate and maintain order, devices must be both identifying and identifiable on a network. That is when IP addresses and MAC addresses come in place. 
+-IP address (internet protocol address) can be used as a way of identifying a device on a network for a period of time. There is two type of IP adresses: public (used to identify a device on the internet) 
+and private (used to identify a device among other devices). A device that is cconnected to the internet have both public and private IP adresses at the same time.The public IP address is given by your internet
+service provider (ISP). There is two types of public IP adresses -> IPv4 (older version) and IPv6 (newer version).
+-A MAC addreess(media access control) which is a unique address given to every device that can bbe found on the microchip board. ***This address can be spoofed.
+
     3. What does the term "IP" stand for? Internet Protocol
     4. What is each section of an IP address called? Octet
     5. How many sections (in digits) does an IP address have? 4
     6. What does the term "MAC" stand for? Media Access Control - mac address is uniqueto each device, but can be spoofed
     7. Deploy the interactive lab using the "View Site" button and spoof your MAC address to access the site.  What is the flag? THM{YOU_GOT_ON_TRYHACKME}
+
+-Ping is a network tool which can be used to determine the performance of a connection between devices -> ping IP address or website URL
+
     8. What protocol does ping use? ICMP - Internet Control Message Protocol. Ping is used to determine the time for ICMP packets to travel between devices on a network.'
     9. What is the syntax to ping 10.10.10.10? ping -c 4 10.10.10.10 - The -c is an options that specifies the numbers of packets to send.
     10. What flag do you get when you ping 8.8.8.8? THM{I_PINGED_THE_SERVER}
@@ -37,6 +42,13 @@ Cons: data travels in a non-efficient way, if a device stops working, the whole 
 -Switches: they are devices that connect multiple devices (computer, printers, tvs, etc.) using ethernet. We usually find them in buisnesses, schools, etc.
 -Routers: they are devices that connect multiple networks and pass data between them.
 
+    1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
+    2. What is the verb given to the job that Routers perform? Routing
+    3. What device is used to centrally connect multiple devices on the local network and transmit data to the correct location? Switch
+    4. What topology is cost-efficient to set up? Bus Topology
+    5. What topology is expensive to set up and maintain? Star Topology
+    6. Complete the interactive lab attached to this task. What is the flag given at the end? THM{TOPOLOGY_FLAWS}
+
 -Subnetting: its a term that means splitting the network into smaller network (ex: a buisness network has a smaller network only for HR or only for finance). The 3 main subnets are as follows: network address,
 host address and default gateway:
 Network Adress: this address identifies the start of the actual network. ex: a device with the IP address of 192.168.1.100 will be on the network identified by 192.168.1.0
@@ -44,28 +56,29 @@ Host Address: this address identifies the device in the subnet. ex: 192.168.1.10
 Default Gateway: its a special address assigned to a device on the network that is capable of sending information to another network. These devices can use any host address but usually use either the first
 or last host address in a network (.1 or .254). ex: 192.168.1.254
 
--ARP protocol: address resolution protocol is responsible for allowing devices to identify themselves on a network by allowing a device to associate a MAC address with an IP address on the network.
-In order to map these two identifiers together (IP address and MAC address), the ARP protocol sends two types of messages: ARP Request and ARP Reply. The ARP request is a message broadcasted on the network
-to other devices asking, "What is the mac address that owns this IP address?" When the other devices receive that message, they will only respond if they own that IP address and will send an
-ARP reply with its MAC address. The requesting device can now remember this mapping and store it in its ARP cache for future use (its a place in the memory where the mapping is stored).
-
-
-    1. What does LAN stand for? Local Area Network - Different type such as ring, star, bus
-    2. What is the verb given to the job that Routers perform? Routing
-    3. What device is used to centrally connect multiple devices on the local network and transmit data to the correct location? Switch
-    4. What topology is cost-efficient to set up? Bus Topology
-    5. What topology is expensive to set up and maintain? Star Topology
-    6. Complete the interactive lab attached to this task. What is the flag given at the end? THM{TOPOLOGY_FLAWS}
     7. What is the technical term for dividing a network up into smaller pieces? Subnetting
     8. How many bits are in a subnet mask? 32
     9. What is the range of a section (octet) of a subnet mask? 0-255
     10. What address is used to identify the start of a network? Network Address
     11. What address is used to identify devices within a network? Host Address
     12. What is the name used to identify the device responsible for sending data to another network? Default Gateway
+
+-ARP protocol: address resolution protocol is responsible for allowing devices to identify themselves on a network by allowing a device to associate a MAC address with an IP address on the network.
+In order to map these two identifiers together (IP address and MAC address), the ARP protocol sends two types of messages: ARP Request and ARP Reply. The ARP request is a message broadcasted on the network
+to other devices asking, "What is the mac address that owns this IP address?" When the other devices receive that message, they will only respond if they own that IP address and will send an
+ARP reply with its MAC address. The requesting device can now remember this mapping and store it in its ARP cache for future use (its a place in the memory where the mapping is stored).
+
     13. What does ARP stand for? Address Resolution Protocol - Two types of messages, ARP Request and ARP Reply
     14. What category of ARP Packet asks a device whether or not it has a specific IP address? Request
     15. What address is used as a physical identifier for a device on a network? MAC Address
     16. What address is used as a logical identifier for a device on a network? IP Address
+
+-DHCP protocol: dynamic host configuration protocol is used when a new device is introduce in an network and it doesnt have an IP adress. The protocol goes as follow:
+1. DHCP discover: request to see if any DHCP servers are on the network
+2. DHCP offer: server replies with an IP address the device could use
+3. DHCP request: device sends a reply confirming the IP address
+4. DHCP ack: servers replies with acknowledgment
+
     17. What type of DHCP packet is used by a device to retrieve an IP address? DHCP Discover
     18. What type of DHCP packet does a device send once it has been offered an IP address by the DHCP server? DHCP Request
     19. Finally, what is the last DHCP packet that is sent to a device from a DHCP server? DHCP ACK -ack stands for acknowledge
