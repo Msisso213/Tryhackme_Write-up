@@ -109,7 +109,15 @@ of data and begin to send these chunks (packets) one at a time. This dividing up
     9. What is the technical term for when a connection is successfully established? Session
     10. What is the technical term for "small chunks of data"? Packets
 
--Layer 4 (transport):
+-Layer 4 (transport): the data is being transmistted in this layer following one of the two protocols:
+1. TCP: transmission control protocol -> used in file sharing, sending emails, internet browsing, and situations where it is important to have an accurate data.
+Pros: guarantees the accuracy of data, synchronises two devices to prevent each other from being flooded with data, Performs a lot more processes for reliability.
+Cons: requires a reliable connection, If one small chunk of data is not received, then the entire chunk of data cannot be used, TCP is significantly slower than UDP because more work has to be
+done by the devices using this protocol.
+2. UDP: user datagram protocol -> used in situations where data accuracy is not important ex video streaming.
+Pros: much faster than TCP
+Cons: doesn't care if data is received, unstable connection results in bad experience for user
+
     11. What is the name of this Layer? Transport
     12. What does TCP stand for? Transmission Control Protocol
     13. What does UDP stand for? User Datagram Protocol
@@ -118,6 +126,8 @@ of data and begin to send these chunks (packets) one at a time. This dividing up
     16. What protocol would an application such as an email client use? TCP
     17. What protocol would an application that downloads files use? TCP
     18. What protocol would an application that streams video use? UDP
+
+-Layer 3
     19. What is the name of this Layer? Network
     20. Will packets take the most optimal route across a network? (Y/N) Y
     21. What does the acronym "OSPF" stand for? OpenShortest Path First
