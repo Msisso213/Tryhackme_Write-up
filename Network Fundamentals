@@ -147,9 +147,20 @@ Cons: doesn't care if data is received, unstable connection results in bad exper
     28. What is the name of the cables that are used to connect devices? Ethernet Cables
 
 ## Packets & Frames
+-Packets and frames both contains data, but are different. A frame is at layer 2 (no IP address) whereas a packet is at layer 3 and will contain a header with many information:
+1. Time to Live: this field sets an expiry timer for the packet to not clog up your network if it never manages to reach a host
+2. Checksum: this field provides integrity checking for protocols.  If any data is changed, this value will be different from what was expected and therefore corrupt.
+3. Source Address: the IP address of the device that the packet is being sent from so that data knows where to return to.
+4. Destination Address: the device's IP address the packet is being sent to so that data knows where to travel next.
+The relation between a packet and a frame is like putting an envelope within an envelope and sending it away. The first envelope will be the packet that you mail, but once it is opened, the envelope within
+still exists and contains data (this is a frame). The process of adding information (from frame to packets) is called encapsulation and the reverse (from packet to frame) is called de-encapsulation. 
+Packets and frames are little piece of data which when brought back together at the receiving network/device make a bigger data (ex: a picture is divided in many different part and each part is being sent 
+to the receiving device which brings back the whole picture together.
 
     1. What is the name for a piece of data when it does have IP addressing information? Packet
     2. What is the name for a piece of data when it does not have IP addressing information? Frame
+
+-
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
     5. What does the term "UDP" stand for? User Datagram Protocol
