@@ -160,7 +160,7 @@ to the receiving device which brings back the whole picture together.
     1. What is the name for a piece of data when it does have IP addressing information? Packet
     2. What is the name for a piece of data when it does not have IP addressing information? Frame
 
--
+-TCP: as explained previously, the TCP is one of the protocol used in layer 4 transport. TCP packets contains headers (section of information) that are added from encapsulation.
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
     5. What does the term "UDP" stand for? User Datagram Protocol
