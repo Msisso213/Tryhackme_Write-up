@@ -167,7 +167,8 @@ to the receiving device which brings back the whole picture together.
 4. Destination IP: ip address of receiving device.
 5. Sequence Number: when a connection occurs, the first piece of data transmitted is given a random number.
 6. Acknowledgement number: after a piece of data has been given a sequence number, the number for the next piece of data will have the sequence number + 1.
-7. Checksum: 
+7. Checksum: A mathematical calculation is made where the output is remembered. When the receiving device performs the mathematical calculation, the data must be corrupt if the output is different
+from what was sent. This is what garranties the TCP integrity.
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
     5. What does the term "UDP" stand for? User Datagram Protocol
