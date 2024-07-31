@@ -189,11 +189,23 @@ from what was sent. This is what garranties the TCP integrity.
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
 
--UDP (user datagram protocol):
+-UDP (user datagram protocol): as previously stated, its a staless protocol which doesn't require a constant, reliable connection. There is no three-way handshake or any synchronisation. Because of this, UDP packets have fewer headers:
+1. Time to Live (TTL): sets an expiry timer for the packet, so it doesn't clog up your network if it never manages to reach a host
+2. Source Port: port opened by the sender to send the TCP packet from (chosen randomly out of the ports from 0-65535 that aren't already in use at the time). 
+3. Destination Port: port number that an application or service is running on the device receiving the data for example, a webserver running on port 80 (not chosen randomly).
+4. Source IP : ip address of the sending device.
+5. Destination IP: ip address of receiving device.
+6. Data: location of where the data is stored.
+
+-Since UDP is stateless, messages are sent using request and response from the two devices.
+
     5. What does the term "UDP" stand for? User Datagram Protocol
     6. What type of connection is "UDP"? Stateless
     7. What protocol would you use to transfer a file? TCP
     8. What protocol would you use to have a video call? UDP
+
+-Here is some protocol as well as their defined port:
+FTP (file transfer protocol) -> port 21
 
 ## Extending Your Network
 
