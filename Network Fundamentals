@@ -189,7 +189,7 @@ from what was sent. This is what garranties the TCP integrity.
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
 
--UDP:
+-UDP (user datagram protocol):
     5. What does the term "UDP" stand for? User Datagram Protocol
     6. What type of connection is "UDP"? Stateless
     7. What protocol would you use to transfer a file? TCP
