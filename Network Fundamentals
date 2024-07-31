@@ -171,7 +171,10 @@ to the receiving device which brings back the whole picture together.
 from what was sent. This is what garranties the TCP integrity.
 8. Data: location of where the data is stored.
 9.Flag: determines how the packet should be handled by either device during the handshake process.
--Three-way handshake:
+-Three-way handshake: process used to establish a connection between two devices. There is 3 steps in this process:
+1. SYN: s SYN message is the initial packet sent by a client during the handshake. This packet is used to initiate a connection and synchronise the two devices together.
+2. SYN/ACK: this packet is sent by the receiving device (server) to acknowledge the synchronisation attempt from the client.
+3. ACK: the acknowledgement packet can be used by either the client or server to acknowledge that a series of messages/packets have been successfully received.
     3. What is the header in a TCP packet that ensures the integrity of data? Checksum
     4. Provide the order of a normal Three-way handshake (with each step separated by a comma). Syn, syn/ack, ack
     5. What does the term "UDP" stand for? User Datagram Protocol
