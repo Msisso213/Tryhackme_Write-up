@@ -205,7 +205,12 @@ from what was sent. This is what garranties the TCP integrity.
     8. What protocol would you use to have a video call? UDP
 
 -Here is some protocol as well as their defined port:
-FTP (file transfer protocol) -> port 21
+FTP (file transfer protocol) -> port 21 -> used by a file-sharing application built on a client-server model, meaning you can download files from a central location.
+SSH (secure shell) -> port 22 -> used to securely login to systems via a text-based interface.
+HTTP (hypertext transfer protocol) -> port 80 -> used for the WWW
+HTTPS (hypertext transfer protocol secure) -> port 443 -> same as HTTP, but securely using encryption.
+SMB (server message block) -> port 445 -> similar to FTP, but allows to share devices like printers.
+RDP (remote desktop protocol) -> port 3389 -> similar to SSH, its a secure means of logging in to a system using a visual desktop interface.
 
 ## Extending Your Network
 
