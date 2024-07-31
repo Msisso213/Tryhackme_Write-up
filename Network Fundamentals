@@ -160,7 +160,7 @@ to the receiving device which brings back the whole picture together.
     1. What is the name for a piece of data when it does have IP addressing information? Packet
     2. What is the name for a piece of data when it does not have IP addressing information? Frame
 
--TCP: as explained previously, the TCP is one of the protocol used in layer 4 transport. TCP packets contains headers (section of information) that are added from encapsulation. Here are some of them:
+-TCP (transmission control protocol): as explained previously, the TCP is one of the protocol used in layer 4 transport. TCP packets contains headers (section of information) that are added from encapsulation. Here are some of them:
 1. Source Port: port opened by the sender to send the TCP packet from (chosen randomly out of the ports from 0-65535 that aren't already in use at the time). 
 2. Destination Port: port number that an application or service is running on the device receiving the data for example, a webserver running on port 80 (not chosen randomly).
 3. Source IP : ip address of the sending device.
