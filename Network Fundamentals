@@ -213,6 +213,9 @@ SMB (server message block) -> port 445 -> similar to FTP, but allows to share de
 RDP (remote desktop protocol) -> port 3389 -> similar to SSH, its a secure means of logging in to a system using a visual desktop interface.
 
 ## Extending Your Network
+-Port forwarding: is the capacity to connect applications and services to the internet. Without it, only devices connected within the same network (intranet) would be able to use it. For example, if I run a webserver in my house,
+someone who is not in my house (who is not in my network) can't access this webserver unless I use port forwarding. We can see it as the opposite of firewall in the sense that it make available some ports to other networks.
+It is configured at the router.
 
     1. What is the name of the device that is used to configure port forwarding? Router
     2. What layers of the OSI model do firewalls operate at? Layer 3 and layer 5
