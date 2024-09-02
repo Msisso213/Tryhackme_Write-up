@@ -3,4 +3,6 @@
 ## DNS in Detail
 -DNS: the Domain Name System provides a simple way to access a website instead of remembering the IP address, we only remember the tryhackme.com for example.
 
-      1. What does DNS stand for? Domain Name System
+    1. What does DNS stand for? Domain Name System
+
+-The domain name can be divided in 3 different sections: Top-Level Domain, Second-Level Domain and Subdomain
