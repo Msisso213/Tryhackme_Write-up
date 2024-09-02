@@ -5,4 +5,15 @@
 
     1. What does DNS stand for? Domain Name System
 
--The domain name can be divided in 3 different sections: Top-Level Domain, Second-Level Domain and Subdomain
+-The domain name can be divided in 3 different sections: Top-Level Domain, Second-Level Domain and Subdomain.
+-TLD: the Top-Level Domain is the most righthand part of a domain name. So, for example, the tryhackme.com TLD is .com. There are two types of TLD, gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain). Historically a gTLD was meant to
+tell the user the domain name's purpose; for example, a .com would be for commercial purposes, .org for an organisation, .edu for education and .gov for government. And a ccTLD was used for geographical purposes, for example, .ca for sites based in Canada,.co.uk for sites
+based in the United Kingdom and so on.
+-Second-Level Domain: Taking tryhackme.com as an example, the .com part is the TLD, and tryhackme is the Second Level Domain. The second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens but cannot start or end with hyphens or have consecutive hyphens.
+-Subdomain: A subdomain sits on the left-hand side of the Second-Level Domain using a period to separate it; for example, in the name admin.tryhackme.com the admin part is the subdomain. A subdomain name has the same creation restrictions as a Second-Level Domain. You can use multiple
+subdomains split with periods to create longer names but the length must be kept to 253 characters or less. There is no limit to the number of subdomains you can create for your domain name.
+
+    2. What is the maximum length of a subdomain? 63
+    3. Which of the following characters cannot be used in a subdomain ( 3 b _ - )? _
+    4. What is the maximum length of a domain name? 253
+    5. What type of TLD is .co.uk? ccTLD
