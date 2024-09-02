@@ -237,7 +237,8 @@ within this tunnel form their own private network. The benefits are mutiple: net
     6. What VPN technology uses the IP framework? IPSec
 
 -Router: connects different networks together
--Switch: responsible for connecting many devices to a network. It can also use the
+-Switch: responsible for connecting many devices to a network. It can also use the Virtual Local Area Network (VLAN) to virtually split up devices within a network. For example, in a business, the "Sales Department" and "Accounting Department"
+will be able to access the Internet, but not able to communicate with each other (although they are connected to the same switch which is connected to a router).
 
     7. What is the verb for the action that a router does? routing
     8. What are the two different layers of switches? Layer 2, layer 3
