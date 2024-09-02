@@ -214,14 +214,30 @@ RDP (remote desktop protocol) -> port 3389 -> similar to SSH, its a secure means
 
 ## Extending Your Network
 -Port forwarding: is the capacity to connect applications and services to the internet. Without it, only devices connected within the same network (intranet) would be able to use it. For example, if I run a webserver in my house,
-someone who is not in my house (who is not in my network) can't access this webserver unless I use port forwarding. We can see it as the opposite of firewall in the sense that it make available some ports to other networks.
+someone who is not in my house (who is not in my network) can't access this webserver unless I use port forwarding. In brief, it make available some ports to other networks.
 It is configured at the router.
 
     1. What is the name of the device that is used to configure port forwarding? Router
+
+-Firewalls: a firewall is simply a devic that determines what traffic is allowed to enter or exit a network based of some factors (where the traffic comes from, where the traffic is going to, what port is the traffic for,
+what protocol the traffic is using, etc.) To answer those question, firewalls do packet inspection. A firewall can be a hardware also as a software. The two main firewall categories are stateful and stateless:
+-Stateful: uses the entire information from a connection. Rather than inspecting an individual packet, this firewall determines the behaviour of a device based upon the entire connection. This type of firewall consumes many ressources
+since the decision making is dynamic (context-aware)
+-Stateless: uses a static set of rules to determine whether or not individual packets are acceptable or not. For example, a device sending a bad packet will not necessarily mean that the entire device is then blocked. Uses less
+ressources, faster, but dumber. They are good in situation such as Distributed Denial-of-Service attack (DDoS)
+
     2. What layers of the OSI model do firewalls operate at? Layer 3 and layer 5
     3. What category of firewall inspects the entire connection? Stateful
     4. What category of firewall inspects individual packets? Stateless
+
+-VPN: a virtual private network is a technology that allows devices on separate networks to communicate securely by creating a dedicated path between each other over the Internet (known as a tunnel). Devices connected 
+within this tunnel form their own private network. The benefits are mutiple: networks in different area can be connected, offers privacy and anonymity.
+
     5. What VPN technology only encrypts & provides the authentication of data? PPP
     6. What VPN technology uses the IP framework? IPSec
-    7. What is the verb for the action that a router does?
+
+-Router: connects different networks together
+-Switch: responsible for connecting many devices to a network. It can also use the
+
+    7. What is the verb for the action that a router does? routing
     8. What are the two different layers of switches? Layer 2, layer 3
