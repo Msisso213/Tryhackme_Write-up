@@ -17,3 +17,15 @@ subdomains split with periods to create longer names but the length must be kept
     3. Which of the following characters cannot be used in a subdomain ( 3 b _ - )? _
     4. What is the maximum length of a domain name? 253
     5. What type of TLD is .co.uk? ccTLD
+
+-DNS can be used for many other purpose than websites and so many DNS record exist:
+-A Record: for IPv4 addresses
+-AAAA Record: for IPv6 addresses
+-CNAME Record: for domain name which return other domain name for example: TryHackMe's online shop has the subdomain name store.tryhackme.com which returns a CNAME record shops.shopify.com.
+-MX Record: for emails (to direct them to the right servers)
+-TXT Record: for arbitrary text
+
+    6. What type of record would be used to advise where to send email? MX
+    7. What type of record handles IPv6 addresses? AAAA
+
+-What happens when you make a DNS request:
