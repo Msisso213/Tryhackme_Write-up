@@ -1,3 +1,6 @@
 # How the Web Works
 
-##
+## DNS in Detail
+-DNS: the Domain Name System provides a simple way to access a website instead of remembering the IP address, we only remember the tryhackme.com for example.
+
+      1. What does DNS stand for? Domain Name System
