@@ -1,7 +1,7 @@
-# Tryhackme_Writeups
+# Tryhackme_Write-up
 These are Tryhackme Learning Material that I found usefull. There is also the answers of the exercises
 
-## Writeups
+## Write-up
 
 [Network Fundamentals](https://github.com/Msisso213/Tryhackme_Writeups/blob/main/Network%20Fundamentals) - Learn the core concepts of how computers communicate with each other and types of network weaknesses.
 
